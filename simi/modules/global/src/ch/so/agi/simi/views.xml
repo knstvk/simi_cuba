@@ -34,4 +34,12 @@
         <property name="productset" view="_minimal"/>
         <property name="tableOfContents" view="_minimal"/>
     </view>
+    <view entity="simi_TableOfContentsLink" name="toclink-layergroup-edit" extends="_local">
+        <property name="productset" view="_minimal"/>
+        <property name="tableOfContents" view="_minimal">
+            <property name="singleActorListProperties" view="_local">
+                <property name="singleactor" view="_minimal"/>
+            </property>
+        </property>
+    </view>
 </views>
